@@ -8,7 +8,7 @@ for _ in range(num_trials):
     x = np.random.randn(d)
     y = np.random.randn(d)
 
-    # True of non unit vectors too, but more true if vectors are normalized.
+    # Higher variance without normalization.
     
     x /= np.linalg.norm(x)
     y /= np.linalg.norm(y)
